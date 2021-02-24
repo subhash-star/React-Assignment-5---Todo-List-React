@@ -57,7 +57,7 @@ function App()
 				index==editIndex 
 				?
 					<div id={index}>
-						<textarea className="editTask" value={itemEditing} onChange={(event)=>setItemEditing(event.target.value)} ></textarea>
+						<textarea className="list" className="editTask" value={itemEditing} onChange={(event)=>setItemEditing(event.target.value)} ></textarea>
 						<button className="saveTask" disabled={!itemEditing}onClick={(event)=>saveItem(event)}> save </button>
 					</div>
 				: <div id={index}>
